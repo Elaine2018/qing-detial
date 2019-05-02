@@ -1,0 +1,210 @@
+<!Doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Red Art - Digital Painting</title>
+
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- **CSS - stylesheets** -->
+	<link id="default-css" rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+    <!-- **Additional - stylesheets** -->
+    <link href="css/animations.css" rel="stylesheet" type="text/css" media="all" />
+	<link id="shortcodes-css" href="css/shortcodes.css" rel="stylesheet" type="text/css" media="all"/>
+    <link id="skin-css" href="skins/red/style.css" rel="stylesheet" media="all" />
+    <link href="css/isotope.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <link href="css/pace.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all"/>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<link id="light-dark-css" href="light/light.css" rel="stylesheet" media="all" />
+
+    <!-- **Font Awesome** -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- **Wrapper** -->
+<div class="wrapper">
+	<div class="inner-wrapper">
+    	<div id="header-wrapper" class="dt-sticky-menu"> <!-- **header-wrapper Starts** -->
+			<div id="header" class="header">
+            	<div class="container menu-container">
+                    <a class="logo" href="index.html"><img alt="Logo" src="images/logo.png"></a>
+
+
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div><!-- **header-wrapper Ends** -->
+
+
+
+
+
+
+
+
+						<section class="events-page">
+
+	  <div class="event event1">
+	    <div class="pinWrapper">
+	      <div class="image"></div>
+	    </div>
+	  </div>
+	  <div class="event event2">
+	    <div class="pinWrapper">
+	      <div class="image"></div>
+	    </div>
+	  </div>
+	  <div class="event event3">
+	    <div class="pinWrapper">
+	      <div class="image"></div>
+	    </div>
+	  </div>
+	  <div class="event event4">
+	    <div class="pinWrapper">
+	      <div class="image"></div>
+	    </div>
+	  </div>
+	</section>
+
+
+
+	</div>
+</div><!-- **Wrapper Ends** -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+.event1 {
+  background-color: #D0BAA0;
+}
+.event1 .image {
+  top: 50%;
+  background-image: url(https://res.cloudinary.com/dxzphanl0/image/upload/v1556229630/Group_1.png);
+}
+
+.event2 {
+  background-color: #D0BAA0;
+}
+.event2 .image {
+  background-image: url(https://res.cloudinary.com/dxzphanl0/image/upload/v1556229630/Group_2.png);
+}
+
+.event3 {
+  background-color: #D0BAA0;
+}
+.event3 .image {
+  background-image: url(https://res.cloudinary.com/dxzphanl0/image/upload/v1556229630/Group_3.png);
+}
+
+.event4 {
+  background-color: #D0BAA0;
+}
+.event4 .image {
+  background-image: url(https://res.cloudinary.com/dxzphanl0/image/upload/v1556229630/Group_4.png);
+}
+
+.image {
+  top: -50%;
+  left: 50%;
+  background-size: contain;
+  position: absolute;
+  margin-top: -255px;
+  margin-left: -375px;
+  height: 520px;
+  width: 1050px;
+}
+
+.pinWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.event {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.scrollmagic-pin-spacer {
+  position: absolute !important;
+  clip: rect(auto, auto, auto, auto);
+}
+</style>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+	<script>
+	var controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({
+	triggerElement: ".event.event2",
+	triggerHook: "onEnter",
+	duration: "100%"
+}).setPin(".events-page .event.event1 .pinWrapper",{
+	pushFollowers: false
+}).addTo(controller);
+
+new ScrollMagic.Scene({
+	triggerElement: ".event.event2",
+	triggerHook: "onEnter",
+	duration: "200%"
+}).setPin(".events-page .event.event2 .pinWrapper",{
+	pushFollowers: false
+}).addTo(controller);
+
+new ScrollMagic.Scene({
+	triggerElement: ".event.event3",
+	triggerHook: "onEnter",
+	duration: "200%"
+}).setPin(".events-page .event.event3 .pinWrapper",{
+	pushFollowers: false
+}).addTo(controller);
+
+new ScrollMagic.Scene({
+	triggerElement: ".event.event4",
+	triggerHook: "onEnter",
+	duration: "100%"
+}).setPin(".events-page .event.event4 .pinWrapper",{
+	pushFollowers: false
+}).addTo(controller);
+	</script>
+<!-- **jQuery** -->
+	<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+
+	<script src="js/jquery.tabs.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.perfectmasonry.min.js"></script>
+
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+
+	<script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+
+	<script src="js/jsplugins.js" type="text/javascript"></script>	<script src="js/custom.js"></script>
+
+</body>
+</html>
