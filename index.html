@@ -36,9 +36,35 @@
   <!-- Modernizr -->
   <script src="js/modernizr.js"></script>
 </head>
+  <style>
+    #back {
+      width: 40px;
+      border-radius: 50%;
+      height: 40px;
+      background: rgba(255,255,255,.8);
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      z-index: 10000;
+      font-size: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px 5px 3px rgba(0,0,0,.5);
+    }
+  </style>
 
+  <script>
+    let backBtn = document.querySelector('#back');
+    backBtn.addEventListener('click', ()=> {
+      window.history.back();
+    })
+  </script>
 <body>
-
+  <div id="back">
+    <
+  </div>
   <!-- **Wrapper** -->
   <div class="wrapper">
     <div class="inner-wrapper">
